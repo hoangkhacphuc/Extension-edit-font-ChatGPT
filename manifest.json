@@ -1,0 +1,28 @@
+{
+    "name": "ChatGPT Font Editing Utility",
+    "author": "Hoàng Khắc Phúc",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "ChatGPT Font Editing Utility là một công cụ chỉnh sửa font chữ của ChatGPT theo ý thích của bạn.",
+    "content_scripts": [
+        {
+          "matches": ["https://chat.openai.com/*"],
+          "js": ["./Code/editFont.js"],
+          "css" : ["./Code/Comfortaa.css"]
+        }
+    ],
+    "icons": {
+        "16": "./Code/icon.png",
+        "48": "./Code/icon.png",
+        "128": "./Code/icon.png"
+    },
+    "permissions": [
+        "activeTab",
+        "storage",
+        "tabs"
+    ],
+    "action": {
+        "default_icon": "./Code/icon.png",
+        "default_popup": "./Code/popup.html"
+    }
+}

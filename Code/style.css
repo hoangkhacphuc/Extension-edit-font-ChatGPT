@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comfortaa', sans-serif;
+    background: #fff;
+    padding: 20px;
+    width: 400px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: #444;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.container  {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+
+.container> .item {
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+    align-items: center;
+}
+
+#demo-font {
+    font-size: 18px;
+}
+
+select {
+    padding: 5px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+}
+
+#status {
+    padding: 1px;
+    width: 50px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 18px;
+    color: #444;
+    cursor: pointer;
+    background-color: #efefef;
+    transition: 0.3s all;
+}
+
+#status.active {
+    background-color: #0ecc5d;
+    color: #fff;
+}
+
+#status span {
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 50%;
+    background-color: #ddd;
+    transform: translateX(0);
+    transition: 0.3s all;
+    animation: moveBack 0.3s;
+}
+
+#status.active span {
+    background-color: #efefef;
+    animation: move 0.3s;
+    transform: translateX(30px);
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(30px);
+    }
+}
+
+@keyframes moveBack {
+    0% {
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+button {
+    margin: 30px auto 0 auto;
+    padding: 7px 20px;
+    border: none;
+    background: #0ecc5d;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #0e9c5cda;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 12px;
+    text-align: center;
+}
+
+footer a {
+    color: #0ecc5d;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #0e9c5cda;
+}

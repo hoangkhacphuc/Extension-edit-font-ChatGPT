@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Font Editing Utility</title>
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="title">ChatGPT Font Editing Utility</div>
+    <div class="container">
+        <div class="item">
+            <div class="item-title">Font Name</div>
+            <div class="item-content">
+                <select name="" id="font-select">
+                    <option value="Arial">Arial</option>
+                    <option value="Comfortaa">Comfortaa</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Helvetica">Helvetica</option>
+                    <option value="Impact">Impact</option>
+                    <option value="Lucida Console">Lucida Console</option>
+                    <option value="Tahoma">Tahoma</option>
+                    <option value="Trebuchet MS">Trebuchet MS</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Roboto">Roboto</option>
+                </select>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-title">Demo</div>
+            <div class="item-content">
+                <p id="demo-font">This is the font you are choosing.</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-title">Status</div>
+            <div class="item-content">
+                <div id="status" class="active"><span></span></div>
+                <input type="hidden" id="inp-status">
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-title"></div>
+            <button id="btn-save-config">Save</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 - <a href="https://www.facebook.com/hoangkhacphuc.dev" target="_blank">Hoàng Khắc Phúc</a></p>
+        <p>hoangkhacphuc.dev@gmail.com</p>
+    </footer>
+    <script src="./popup.js"></script>
+</body>
+</html>
